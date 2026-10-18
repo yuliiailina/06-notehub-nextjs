@@ -19,7 +19,10 @@ export const metadata: Metadata = {
   title: "Notehub",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({ 
+  children,
+ }: {children: React.ReactNode;
+}) {
   return (
     <html
       lang="en"
